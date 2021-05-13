@@ -17,6 +17,10 @@ import {
 } from "./styles";
 
 function HeaderComponent() {
+  const goToBuy = () => {
+    window.location.href = "http://bit.ly/soaEbookEduzzWEB";
+    return null;
+  };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -39,8 +43,26 @@ function HeaderComponent() {
               suas origens, personagens e conceitos nunca se quer explorados na
               série.
             </Text>
-            <ButtonBuy type="button">Tenho Interesse</ButtonBuy>
-            <ButtonBuy type="button">Por que devo adquirir?</ButtonBuy>
+            <ButtonBuy
+              onClick={goToBuy}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={500}
+            >
+              Tenho Interesse
+            </ButtonBuy>
+            <ButtonBuy
+              activeClass="active"
+              to="what"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={500}
+            >
+              Por que devo adquirir?
+            </ButtonBuy>
           </ContainerText>
         </ContainerItems>
       </ContainerEbook>

@@ -16,6 +16,10 @@ import {
 } from "./styles";
 
 function PriceComponent() {
+  const goToBuy = () => {
+    window.location.href = "http://bit.ly/soaEbookEduzzWEB";
+    return null;
+  };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -29,7 +33,7 @@ function PriceComponent() {
       <PricingPannel>
         <IMGEbook src={book} />
         <MinValuePice>R$20,00 á vista ou</MinValuePice>
-        <ValuePice>5x R$5,38</ValuePice>
+        <ValuePice>4x R$5,37</ValuePice>
         <ValueName>E-Book PDF</ValueName>
         <ValueBenefits>26 Capítulos</ValueBenefits>
         <ValueBenefits>
@@ -38,7 +42,16 @@ function PriceComponent() {
         <ValueBenefits>Imersão na História</ValueBenefits>
         <ValueBenefits>Riqueza de Detalhes</ValueBenefits>
         <ValueBenefits>Compreensão Facilitada</ValueBenefits>
-        <ButtonPriceWarranty>Quero adquirir</ButtonPriceWarranty>
+        <ButtonPriceWarranty
+          onClick={goToBuy}
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-200}
+          duration={500}
+        >
+          Quero adquirir
+        </ButtonPriceWarranty>
       </PricingPannel>
     </ContainerPrice>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const Header = styled.div`
   background-color: #333;
@@ -78,7 +79,7 @@ export const Text = styled.p`
   color: #fff;
   margin: 10px 0px 0px 0px;
 `;
-export const ButtonBuy = styled.button`
+export const ButtonBuy = styled(Link)`
   font-family: "Ubuntu";
   font-size: 1.2rem;
   font-weight: 700;
@@ -91,7 +92,9 @@ export const ButtonBuy = styled.button`
   width: 100%;
   height: 45px;
   color: #000;
+  background-color: #fff;
   margin-top: 2rem;
+  text-align: center;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   :hover {

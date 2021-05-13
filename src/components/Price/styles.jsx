@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const ContainerPrice = styled.div`
   display: flex;
@@ -86,7 +87,7 @@ export const ValueBenefits = styled.p`
   padding: 10px;
 `;
 
-export const ButtonPriceWarranty = styled.button`
+export const ButtonPriceWarranty = styled(Link)`
   font-family: "Ubuntu";
   font-size: 2rem;
   font-weight: 700;

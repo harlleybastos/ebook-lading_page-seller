@@ -15,6 +15,10 @@ import { ButtonPriceWarranty } from "../Price/styles";
 import warranty from "../../assets/img/warranty.png";
 import imgDrive from "../../assets/img/logo-drive.png";
 function WarrantyComponent() {
+  const goToBuy = () => {
+    window.location.href = "http://bit.ly/soaEbookEduzzWEB";
+    return null;
+  };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -44,7 +48,16 @@ function WarrantyComponent() {
           <IMGWarranty src={imgDrive} />
         </ContainerWarrantText>
       </ContainerWarranty>
-      <ButtonPriceWarranty>Quero adquirir</ButtonPriceWarranty>
+      <ButtonPriceWarranty
+        onClick={goToBuy}
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-200}
+        duration={500}
+      >
+        Quero adquirir
+      </ButtonPriceWarranty>
     </MainContainerWarranty>
   );
 }
