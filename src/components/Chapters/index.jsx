@@ -4,7 +4,6 @@ import Aos from "aos";
 import {
   ContainerChapters,
   ContainerItemsChapters,
-  ContainerTextSection,
   ContainerWrapperImg,
   DescChapter,
   ImgChapter,
@@ -31,22 +30,18 @@ function ChaptersComponent() {
         </DescChapter>
         <SectionChapter>
           <ImgSectionChapter src={imgEbookGoogle} />
-          <ContainerTextSection>
-            <TitleSectionChapter>26 Capítulos</TitleSectionChapter>
-            <TextSectionChapter>
-              O E-Book conta com 26 capítulos de pura imersão ao universo
-              misterioso de toda a história dos First 9.
-            </TextSectionChapter>
-          </ContainerTextSection>
+          <TitleSectionChapter>26 Capítulos</TitleSectionChapter>
+          <TextSectionChapter>
+            O E-Book conta com 26 capítulos de pura imersão ao universo
+            misterioso de toda a história dos First 9.
+          </TextSectionChapter>
         </SectionChapter>
         <SectionChapter data-aos="fade-up">
           <ImgSectionChapter src={imgStar} />
-          <ContainerTextSection>
-            <TitleSectionChapter>Boa Leitura</TitleSectionChapter>
-            <TextSectionChapter>
-              Boa leitura fluida e de fácil compreensão.
-            </TextSectionChapter>
-          </ContainerTextSection>
+          <TitleSectionChapter>Boa Leitura</TitleSectionChapter>
+          <TextSectionChapter>
+            Boa leitura fluida e de fácil compreensão.
+          </TextSectionChapter>
         </SectionChapter>
       </ContainerItemsChapters>
       <ContainerWrapperImg data-aos="fade-up">

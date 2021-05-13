@@ -32,6 +32,9 @@ export const DescPrice = styled.p`
   padding: 0 30px;
   width: 500px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 export const PricingPannel = styled.div`
@@ -63,6 +66,7 @@ export const MinValuePice = styled.p`
 `;
 export const ValuePice = styled.p`
   color: #333;
+  text-align: center;
   font-size: 7rem;
   font-weight: 700;
   line-height: 1;

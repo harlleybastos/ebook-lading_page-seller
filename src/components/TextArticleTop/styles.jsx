@@ -6,6 +6,12 @@ export const ContainerTitleArticle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 export const TitleArticle = styled.h1`
   font-family: "Ubuntu";

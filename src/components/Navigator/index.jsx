@@ -39,7 +39,7 @@ const NavigatorComponent = () => {
           <Line></Line>
           <Line></Line>
         </Hamburguer>
-        <NavLinks className={!isActive ? "open" : "close"}>
+        <NavLinks className={isActive ? "open" : "close"}>
           <LogoNavBar src={logoSOH} />
           <ItemNavLink className={isActive ? "close" : null}>
             <NavItem

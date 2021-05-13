@@ -8,6 +8,7 @@ import {
   ContainerEbook,
   ContainerItems,
   ContainerLogo,
+  ContainerLogoSOA,
   ContainerText,
   Header,
   ImgEbook,
@@ -27,45 +28,48 @@ function HeaderComponent() {
   return (
     <Header id="header">
       <ContainerLogo data-aos="fade-up">
-        <Logo src={logoSOH} />
+        <ContainerLogoSOA>
+          <Logo src={logoSOH} />
+        </ContainerLogoSOA>
+        <ContainerEbook>
+          <ContainerItems>
+            <ImgEbook data-aos="fade-up" src={ebook} />
+            <ContainerText data-aos="fade-up">
+              <TitleHeader>First 9</TitleHeader>
+              <Text>
+                O melhor E-book atualmente que conta toda a história do
+                moto-clube responsavél pelas origens de Sons of Anarchy, os
+                First 9.
+                <br />
+                <br />
+                Entenda toda a história que não foi contada por Sons of Anarchy,
+                suas origens, personagens e conceitos nunca se quer explorados
+                na série.
+              </Text>
+              <ButtonBuy
+                onClick={goToBuy}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={500}
+              >
+                Tenho Interesse
+              </ButtonBuy>
+              <ButtonBuy
+                activeClass="active"
+                to="what"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={500}
+              >
+                Por que devo adquirir?
+              </ButtonBuy>
+            </ContainerText>
+          </ContainerItems>
+        </ContainerEbook>
       </ContainerLogo>
-      <ContainerEbook>
-        <ContainerItems>
-          <ImgEbook data-aos="fade-up" src={ebook} />
-          <ContainerText data-aos="fade-up">
-            <TitleHeader>First 9</TitleHeader>
-            <Text>
-              O melhor E-book atualmente que conta toda a história do moto-clube
-              responsavél pelas origens de Sons of Anarchy, os First 9.
-              <br />
-              <br />
-              Entenda toda a história que não foi contada por Sons of Anarchy,
-              suas origens, personagens e conceitos nunca se quer explorados na
-              série.
-            </Text>
-            <ButtonBuy
-              onClick={goToBuy}
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-            >
-              Tenho Interesse
-            </ButtonBuy>
-            <ButtonBuy
-              activeClass="active"
-              to="what"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={500}
-            >
-              Por que devo adquirir?
-            </ButtonBuy>
-          </ContainerText>
-        </ContainerItems>
-      </ContainerEbook>
     </Header>
   );
 }

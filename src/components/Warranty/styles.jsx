@@ -19,6 +19,7 @@ export const ContainerWarranty = styled.div`
 
   @media screen and (max-width: 1280px) {
     flex-direction: column;
+    width: 50%;
   }
 `;
 
@@ -27,6 +28,10 @@ export const ContainerWarrantText = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
 `;
 
 export const TitleWarranty = styled.h3`
@@ -45,12 +50,16 @@ export const DescWarranty = styled.p`
   line-height: 2.8rem;
   opacity: 0.6;
   margin-bottom: 4.8rem;
-  width: 500px;
-  max-width: 80%;
   text-align: center;
+
+  @media (min-width: 1281px) {
+    width: 500px;
+    max-width: 80%;
+  }
 `;
 export const TitleWarrantyTwo = styled.h3`
   color: #fffefe;
+  text-align: center;
   font-family: "Ubuntu";
   margin-top: 6rem;
   font-size: 4rem;
@@ -70,6 +79,10 @@ export const DescWarrantyTwo = styled.p`
   width: 500px;
   max-width: 80%;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    max-width: auto;
+    width: auto;
+  }
 `;
 
 export const IMGWarranty = styled.img`

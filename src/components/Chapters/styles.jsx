@@ -12,6 +12,10 @@ export const ContainerChapters = styled.section`
   @media screen and (max-width: 1280px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 export const ContainerItemsChapters = styled.div`
@@ -19,6 +23,7 @@ export const ContainerItemsChapters = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 `;
 
 export const TitleChapter = styled.h1`
@@ -47,6 +52,9 @@ export const SectionChapter = styled.div`
   justify-content: center;
   padding: 3rem 0 3rem 0;
   height: auto;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleSectionChapter = styled.h3`
@@ -81,7 +89,7 @@ export const ImgSectionChapter = styled.img`
   font-size: 4.7rem;
   line-height: 1;
   margin-bottom: 3.5rem;
-  width: 4.7rem;
+  width: 5rem;
   margin-right: 1.5rem;
 `;
 
@@ -92,8 +100,7 @@ export const ContainerWrapperImg = styled.div`
 `;
 
 export const ImgChapter = styled.img`
-  vertical-align: middle;
+  width: 80%;
+  max-width: 700px;
   height: auto;
-  max-width: 100%;
-  border-style: none;
 `;

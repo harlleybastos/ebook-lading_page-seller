@@ -3,24 +3,35 @@ import { Link } from "react-scroll";
 
 export const Header = styled.div`
   background-color: #333;
-  height: 80vh;
+
   @media screen and (max-width: 1280px) {
+    padding: 50px;
+  }
+  @media screen and (max-width: 768px) {
     height: auto;
+    padding: 50px;
   }
 `;
 
 export const ContainerLogo = styled.ul`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 100%;
+`;
+
+export const ContainerLogoSOA = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 `;
 
 export const Logo = styled.img`
-  width: 120px;
+  width: 150px;
   max-width: 80%;
-  margin-top: 30px;
 `;
 
 export const ContainerEbook = styled.div`
@@ -44,23 +55,34 @@ export const ContainerItems = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
 `;
 
 export const ImgEbook = styled.img`
-  width: 500px;
-  max-height: 100%;
+  max-width: 600px;
+  width: 80%;
   object-fit: cover;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    max-width: 900px;
+    width: 100%;
+  }
 `;
 
 export const ContainerText = styled.div`
   display: flex;
   align-items: center;
-  height: 600px;
-  max-height: 50%;
-  width: 500px;
-  max-width: 90%;
   flex-direction: column;
+  @media (min-width: 1281px) {
+    width: 500px;
+    max-width: 90%;
+  }
 `;
 
 export const TitleHeader = styled.h1`
@@ -69,6 +91,9 @@ export const TitleHeader = styled.h1`
   font-size: 9rem;
   color: #fff;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    white-space: nowrap;
+  }
 `;
 export const Text = styled.p`
   font-family: "Ubuntu";
@@ -81,7 +106,7 @@ export const Text = styled.p`
 `;
 export const ButtonBuy = styled(Link)`
   font-family: "Ubuntu";
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -99,7 +124,7 @@ export const ButtonBuy = styled(Link)`
   transition: all 0.4s ease-in-out;
   :hover {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     background-color: #49b970;
     border-color: #fff;
   }
